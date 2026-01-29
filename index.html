@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Git Assignment – DevOps Micro Internship (#DMI)</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1>Week 3: Git & GitHub Assignment</h1>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="cohort-line">
+                Part of <strong>DevOps Micro Internship (#DMIByPravinMishra)</strong> by
+                <a href="https://www.linkedin.com/in/pravin-mishra-aws-trainer/" target="_blank">Pravin Mishra</a>
+            </p>
+            <p class="playlist-line">
+                If you’d like to join cohort 3:
+                <a href="https://chat.whatsapp.com/LSQpMsW9suFAS54DKtLcgE" target="_blank">
+                    Join the WhatsApp community</a>
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Student Details -->
+        <section class="card student-info" aria-labelledby="student-details">
+            <h2 id="student-details">Student Details</h2>
+            <p><b>----Lohith G Gowda ----<span class="placeholder">[Write your name here]</span></p>
+            <p><b>*-------Group-5-------*</b> <span class="placeholder">[Write your group number here]</span></p>
+        </section>
+
+        <!-- Concepts Learned -->
+        <section class="card instructions" aria-labelledby="learning-summary">
+            <h2 id="learning-summary">Concepts You’ve Learned (Git & GitHub)</h2>
+
+            <p><b>Week 3 Learning Summary (Git & GitHub) – in simple words:</b></p>
+
+            <ul>
+                <li><b>What Git is (analogy):</b> Git is like a <b>video game's save system</b>. Every time I commit, it’s like creating a new “save point” that I can go back to later.</li>
+                <li><b>Repository:</b> A repository (repo) is the project folder where Git tracks files and their history.</li>
+                <li><b><code>git init</code>:</b> Starts Git tracking in an existing folder by creating a hidden <code>.git</code> database.</li>
+                <li><b><code>git clone</code>:</b> Downloads a copy of an existing repo (for example, from GitHub) to my system so I can work on it.</li>
+                <li><b>Working directory:</b> This is where I edit files normally (like typing in HTML/CSS).</li>
+                <li><b><code>git status</code>:</b> Shows what I changed and what Git is currently tracking. It’s like a checklist of “what is modified / what is ready”.</li>
+                <li><b>Staging area (analogy):</b> The staging area is like a <b>shopping cart</b>. I choose which changes I want to include using <code>git add</code>. I don’t have to buy everything I touched.</li>
+                <li><b><code>git add</code>:</b> Adds selected changes to staging so they will be included in the next commit.</li>
+                <li><b>Good commit messages:</b> I should write short, clear messages like “Add contact page link” so future debugging is easier.</li>
+                <li><b>Commit (analogy):</b> A commit is like a <b>photograph/snapshot</b> of the project at a point in time with a message describing what I did.</li>
+                <li><b><code>git commit -m</code>:</b> Saves the staged snapshot into Git history with a short message (example: “Fix footer link”).</li>
+                <li><b><code>git log</code>:</b> Shows the timeline of commits (who changed what and when). This helps when something breaks.</li>
+                <li><b><code>git diff</code>:</b> Shows the exact line-by-line changes between versions (useful for finding mistakes quickly).</li>
+                <li><b><code>.gitignore</code>:</b> A file that tells Git which files/folders NOT to track (like <code>node_modules</code> or secret config files).</li>
+                <li><b>Branching (analogy):</b> A branch is like making a <b>photocopy of your notebook</b> to try a new solution. The original stays safe. I can create a branch, work there, and merge later.</li>
+                <li><b><code>git branch</code> / <code>git switch</code>:</b> Lets me create and move between branches (so my experiments don’t disturb the main work).</li>
+                <li><b>Merge conflict (analogy):</b> A conflict happens when Git cannot decide between two edits (like two people editing the same sentence differently). I must manually choose the correct final version.</li>
+                <li><b>Merging:</b> Merge combines my branch changes back into the main branch after I confirm everything is correct.</li>
+                <li><b>GitHub:</b> GitHub stores my repo online, so I can back up code, share it, and collaborate.</li>
+                <li><b>Remote (analogy):</b> A remote is like a <b>cloud copy</b> of my project. My laptop has local commits; GitHub has the remote commits.</li>
+                <li><b><code>git remote -v</code>:</b> Shows which GitHub URL my project is connected to.</li>
+                <li><b>Push/Pull:</b> <b>Push</b> uploads my commits to GitHub; <b>pull</b> brings new changes from GitHub to my computer.</li>
+                <li><b><code>git fetch</code> vs <code>git pull</code>:</b> <code>fetch</code> only downloads updates; <code>pull</code> downloads and merges them into my current branch.</li>
+                <li><b>Pull Request (PR):</b> A PR is a request to merge changes. It allows review and discussion before merging (good for team work and avoiding bugs).</li>
+                <li><b><code>git stash</code>:</b> Temporarily saves my unfinished work without committing, so I can switch branches safely and come back later.</li>
+                <li><b><code>git reset</code> vs <code>git revert</code>:</b> <code>reset</code> moves my branch pointer back (can rewrite history); <code>revert</code> creates a new commit that “undoes” changes (safer on shared repos).</li>
+                <li><b>Tags/Releases:</b> A tag is like a label on a specific commit (example: <code>v1.0</code>) so I can easily find important versions.</li>
+                <li><b>Debugging scenario (real world):</b> If the website suddenly stops working after changes, I can run <code>git log</code> to find the last commit, use <code>git diff</code> to see what exactly changed, and then fix it or revert the bad commit.</li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        © 2025 DevOps for Beginners • <a href="https://www.linkedin.com/in/pravin-mishra-aws-trainer/"
+            target="_blank">Pravin Mishra</a> | <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+
+</html>
